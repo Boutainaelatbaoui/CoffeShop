@@ -33,7 +33,7 @@ body{
 
 .btn-one{
     background-color: #DE6603 !important;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
 }
 
 .navbar-toggler{
