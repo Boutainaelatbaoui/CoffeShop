@@ -39,3 +39,19 @@ body{
 .navbar-toggler{
     background-color: #DE6603;
 }
+
+.nav-user{
+    color: #FFFFFF !important;
+    font-weight: bolder;
+}
+
+.dropdown-menu{
+    background-color: #eeeeee !important;
+    font-weight: bold;
+    border-radius: 10px !important;
+}
+
+.dropdown-menu a:hover{
+    background-color: #071248 !important;
+    color: #FFFFFF !important;
+}
