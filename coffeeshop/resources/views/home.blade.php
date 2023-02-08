@@ -20,7 +20,7 @@
 </div>
 <div class="mt-5 pt-4 text-center">
     <h1 class="fw-bold home-textone">Our Coffee</h1>
-    <h3 class="mt-4 home-subtext">We have carefully selected great tasting coffees from around the world.</h3>
+    <h3 class="mt-3 home-subtext">We have carefully selected great tasting coffees</h3>
     <h3 class="mt-2 home-subtext">from around the world.</h3>
 </div>
 @endsection
