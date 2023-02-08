@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
+Route::get('/home', function () {
+    return view('home');
+})->name('home');
+
 Route::get('/', function () {
     return view('home');
 })->name('home');
