@@ -25,37 +25,52 @@
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 mt-5">
         <div class="col">
             <div class="card card-menu btn bg-white mb-3 p-0">
-                <div style="height: 300px; background-position: center; background-size: cover; background-repeat: no-repeat; background-image: url('assets/img/drump.jpg');"></div>
+                <div style="height: 350px; background-position: center; background-size: cover; border-top-right-radius: 15px; border-top-left-radius: 15px; background-repeat: no-repeat; background-image: url({{asset('img/coffee1.jpg')}});"></div>
                 <div class="card-body">
-                    <h5 class="card-title text-center fs-4 fw-bolder mb-3">Card title</h5>
-                    <p class="card-text text-start"><span class="fw-bold text-muted">Category:</span></p>
-                    <p class="card-text text-start"><span class="fw-bold text-muted">Quantity:</span></p>
-                    <p class="card-text text-start"><span class="fw-bold text-muted">Price:</span></p>
-                    <p class="card-text text-start"><span class="fw-bold text-muted">Description:</span></p>
+                    <h4 class="card-text fw-bolder mb-3">Espresso</h4>
+                    <p class="card-text text-center"><span class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro harum reprehenderit, quibusdam rerum doloremque fuga optio placeat alias.</span></p>
+                    <div class="d-flex justify-content-between pt-3">
+                        <div>
+                            <button class="btn btn-menu">Order Now</button>
+                        </div>
+                        <div>
+                            <h3 class="card-text text-start"><span class="">25 DH</span></h3>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card card-menu btn bg-white mb-3 p-0">
-                <div style="height: 300px; background-position: center; background-size: cover; background-repeat: no-repeat; background-image: url('assets/img/drump.jpg');"></div>
+                <div style="height: 350px; background-position: center; background-size: cover; border-top-right-radius: 15px; border-top-left-radius: 15px; background-repeat: no-repeat; background-image: url({{asset('img/coffee4.jpg')}});"></div>
                 <div class="card-body">
-                    <h5 class="card-title text-center fs-4 fw-bolder mb-3">Card title</h5>
-                    <p class="card-text text-start"><span class="fw-bold text-muted">Category:</span></p>
-                    <p class="card-text text-start"><span class="fw-bold text-muted">Quantity:</span></p>
-                    <p class="card-text text-start"><span class="fw-bold text-muted">Price:</span></p>
-                    <p class="card-text text-start"><span class="fw-bold text-muted">Description:</span></p>
+                    <h4 class="card-title fw-bolder mb-3">Ice Blended</h4>
+                    <p class="card-text text-center"><span class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro harum reprehenderit, quibusdam rerum doloremque fuga optio placeat alias.</span></p>
+                    <div class="d-flex justify-content-between pt-3">
+                        <div>
+                            <button class="btn btn-menu">Order Now</button>
+                        </div>
+                        <div>
+                            <h3 class="card-text text-start"><span class="">25 DH</span></h3>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card card-menu btn bg-white mb-3 p-0">
-                <div style="height: 300px; background-position: center; background-size: cover; background-repeat: no-repeat; background-image: url('assets/img/drump.jpg');"></div>
+                <div style="height: 350px; background-position: center; border-top-right-radius: 15px; border-top-left-radius: 15px; background-size: cover; background-repeat: no-repeat; background-image: url({{asset('img/coffee3.jpg')}});"></div>
                 <div class="card-body">
-                    <h5 class="card-title text-center fs-4 fw-bolder mb-3">Card title</h5>
-                    <p class="card-text text-start"><span class="fw-bold text-muted">Category:</span></p>
-                    <p class="card-text text-start"><span class="fw-bold text-muted">Quantity:</span></p>
-                    <p class="card-text text-start"><span class="fw-bold text-muted">Price:</span></p>
-                    <p class="card-text text-start"><span class="fw-bold text-muted">Description:</span></p>
+                    <h4 class="card-title fw-bolder mb-3">Frappuccino</h4>
+                    <p class="card-text text-center"><span class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro harum reprehenderit, quibusdam rerum doloremque fuga optio placeat alias.</span></p>
+                    <div class="d-flex justify-content-between pt-3">
+                        <div>
+                            <button class="btn btn-menu">Order Now</button>
+                        </div>
+                        <div>
+                            <h3 class="card-text text-start"><span class="">25 DH</span></h3>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

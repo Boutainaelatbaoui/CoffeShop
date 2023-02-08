@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Frijole&family=Merienda+One&family=Mochiy+Pop+One&family=Niconne&family=Pacifico&family=Poppins&family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Comfortaa&family=Cookie&family=Courgette&family=Kaushan+Script&family=Libre+Baskerville&family=Merriweather&family=Pacifico&family=Playball&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Comfortaa&family=Cookie&family=Courgette&family=Kaushan+Script&family=Libre+Baskerville&family=Merriweather&family=Pacifico&family=Playball&family=Satisfy&family=Shrikhand&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -103,6 +104,12 @@ body{
     color: #0c2b3c !important;
 }
 
-.btn-footer{
+.btn-footer, .card-menu{
     color: #0c2b3c !important;
 }
+
+.btn-menu {
+    background-color: #0c2b3c !important;
+    color: #eeeeee !important;
+}
+
