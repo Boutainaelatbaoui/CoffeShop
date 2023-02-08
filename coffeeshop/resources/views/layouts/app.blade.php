@@ -24,7 +24,7 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex navbar-welcome py-2">
-            <a class="navbar-brand mx-4" href="{{Route('welcome')}}">
+            <a class="navbar-brand mx-4" href="{{Route('home')}}">
                 <span class="logo">
                     Coffee<span class="img-fluid"><img src="{{asset('img/icons8-coffee-64 (2).png')}}" class="logo-img" alt="coffee logo"></span>Shop
                 </span>
@@ -44,22 +44,22 @@
                     @guest
                         @if (Route::has('login'))
                             <li class="nav-item">
-                                <a class="nav-link btn btn-one me-3 mt-2 mt-lg-0" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <button type="button" class="nav-link btn btn-one me-3 mt-2 mt-lg-0 ms-4 ms-lg-0" href="{{ route('login') }}">{{ __('Login') }}</button>
                             </li>
                         @endif
 
                         @if (Route::has('register'))
                             <li class="nav-item">
-                                <a class="nav-link btn btn-one mt-3 mt-lg-0" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                <button type="button" class="nav-link btn btn-one mt-3 mt-lg-0 ms-4 ms-lg-0" href="{{ route('register') }}">{{ __('Register') }}</button>
                             </li>
                         @endif
                     @else
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle nav-user ms-4 ms-lg-0 btn btn-one" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle nav-user ms-4 ms-lg-0 mt-3 mt-lg-0 btn btn-one" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }}
                             </a>
 
-                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu dropdown-menu-end ms-4 ms-lg-0" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="">
                                     {{ __('Edit Profile') }}
                                 </a>

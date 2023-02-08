@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Frijole&family=Merienda+One&family=Mochiy+Pop+One&family=Niconne&family=Pacifico&family=Poppins&family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Comfortaa&family=Cookie&family=Courgette&family=Kaushan+Script&family=Libre+Baskerville&family=Merriweather&family=Pacifico&family=Playball&family=Satisfy&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@
 
 body{
     font-family: 'Poppins', sans-serif !important;
-    background-color: #eeeeee !important;
+    background-color: #FFFFFF !important;
 }
 
 .logo{
@@ -25,19 +25,21 @@ body{
 }
 
 .navbar-welcome{
-    background-color: #071248 !important;
+    background-color: #1f202b !important;
     border-bottom-right-radius: 50px !important;
     border-bottom-left-radius: 50px !important;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    border-color: #ced8d9 !important;
+    border-width: 10px !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .btn-one{
-    background-color: #DE6603 !important;
-    color: #FFFFFF !important;
+    background-color: #eeeeee  !important;
+    color: black !important;
 }
 
 .navbar-toggler{
-    background-color: #DE6603;
+    background-color: #e38150;
 }
 
 .nav-user{
@@ -54,4 +56,29 @@ body{
 .dropdown-menu a:hover{
     background-color: #071248 !important;
     color: #FFFFFF !important;
+}
+
+.card-home{
+    background-image: url('../img/tasse-cafe-fait-dans-tasse.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px !important;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    min-height: 380px;
+    
+}
+
+.home-text{
+    font-family: 'Poppins', sans-serif;
+    color: #1f202b !important;
+}
+
+.home-textone{
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Cookie', cursive;
+    font-size: 68px !important;
+}
+
+.home-subtext{
+    font-family: 'Playball', cursive;
 }
