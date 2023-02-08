@@ -2,13 +2,13 @@
 @section('title','Coffee Shop | Login')
 
 @section('content')
-<div class="container">
+<div class="container mt-5 pt-3 mb-5">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+            <div class="card card-auth">
+                <div class="card-header header-auth fw-bolder text-center fs-4">Coffee Shop | {{ __('Login') }}</div>
 
-                <div class="card-body">
+                <div class="card-body body-auth">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
@@ -54,7 +54,7 @@
 
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-auth">
                                     {{ __('Login') }}
                                 </button>
 

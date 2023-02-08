@@ -113,3 +113,15 @@ body{
     color: #eeeeee !important;
 }
 
+.header-auth{
+    background-color: #ced8d9 !important;
+}
+
+.body-auth{
+    background-color: #f3f4f6 !important;
+}
+
+.btn-auth{
+    background-color: #0c2b3c !important;
+    color: #eeeeee !important;
+}
