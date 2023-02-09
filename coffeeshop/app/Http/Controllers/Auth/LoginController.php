@@ -31,7 +31,7 @@ class LoginController extends Controller
     protected function authenticated()
     {
         if(Auth::user()->is_admin == 1){
-            return redirect('dashboard');
+            return redirect('/coffee');
         }
         else{
             return redirect('/home');

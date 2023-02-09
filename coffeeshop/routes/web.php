@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CoffeeController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 /*
@@ -25,10 +26,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::group(['middleware' => ['auth','isAdmin']], function () {
-    Route::get('/dashboard', [HomeController::class, 'adminHome'])->name('dashboard');
+    Route::get('/coffee', [HomeController::class, 'adminHome'])->name('dashboard');
 });
 
 Route::group(['middleware' => ['prevent-back-history']],function(){
 	Auth::routes();
 	Route::get('/home', [HomeController::class, 'index']);
 });
+
+Route::resource('coffee', CoffeeController::class);
