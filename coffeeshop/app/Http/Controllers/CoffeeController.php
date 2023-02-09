@@ -54,7 +54,7 @@ class CoffeeController extends Controller
         $coffee->coffee_size     = $request->coffee_size;
         $coffee->coffee_price    = $request->coffee_price;
         $coffee->coffee_detail   = $request->coffee_detail;
-        $coffee->coffee_category = $request->coffee_name;
+        $coffee->coffee_category = $request->coffee_category;
         $coffee->coffee_image    = $file_name;
 
         $coffee->save();
