@@ -27,6 +27,13 @@
 </head>
 <body class="dash-body">
     <main class="">
+        @if (session('success'))
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>success!</strong>
+                {{ session('success') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        @endif
         <div class="card welcome-card text-center bx-shadow">
             <div class="card-style"></div>
             <div class="card-body box-card">

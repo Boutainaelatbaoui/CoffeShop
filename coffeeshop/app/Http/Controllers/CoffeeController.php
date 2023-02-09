@@ -36,7 +36,30 @@ class CoffeeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'coffee_name'    => 'required',
+            'coffee_size'    =>  'required',
+            'coffee_price'   =>  'required',
+            'coffee_detail'  =>  'required',
+            'coffee_category'=>  'required',
+            'coffee_image'   =>  'required|image|mimes:jpg,png,jpeg,gif,svg'
+        ]);
+
+        $file_name = time() . '.' . request()->coffee_image->getClientOriginalExtension();
+        request()->coffee_image->move(public_path('img'), $file_name);
+
+        $coffee = new Coffee;
+
+        $coffee->coffee_name     = $request->coffee_name;
+        $coffee->coffee_size     = $request->coffee_size;
+        $coffee->coffee_price    = $request->coffee_price;
+        $coffee->coffee_detail   = $request->coffee_detail;
+        $coffee->coffee_category = $request->coffee_name;
+        $coffee->coffee_image    = $file_name;
+
+        $coffee->save();
+
+        return redirect()->route('coffee.index')->with('success', 'Coffee added successfully');
     }
 
     /**
