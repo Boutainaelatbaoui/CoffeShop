@@ -25,5 +25,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::group(['middleware' => ['auth','isAdmin']], function () {
-    Route::get('dashboard', [HomeController::class, 'adminHome'])->name('dashboard');
+    Route::get('/dashboard', [HomeController::class, 'adminHome'])->name('dashboard');
+});
+
+Route::group(['middleware' => ['prevent-back-history']],function(){
+	Auth::routes();
+	Route::get('/home', [HomeController::class, 'index']);
 });
