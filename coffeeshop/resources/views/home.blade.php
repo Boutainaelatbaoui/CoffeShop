@@ -3,6 +3,13 @@
 
 @section('content')
 <div class="container mt-4 mb-5">
+    @if (session('error'))
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>warning!</strong>
+            {{ session('error') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    @endif
     <div class="row">
         <div class="col">
             <div class="card card-home">
