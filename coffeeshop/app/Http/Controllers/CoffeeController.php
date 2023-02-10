@@ -134,6 +134,8 @@ class CoffeeController extends Controller
      */
     public function destroy(Coffee $coffee)
     {
-        //
+        $coffee->delete();
+
+        return redirect()->route('coffee.index')->with('success', 'Coffee deleted successfully');
     }
 }

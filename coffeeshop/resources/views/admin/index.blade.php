@@ -50,9 +50,13 @@
                     <td class="">{{ $row->coffee_category }}</td>
                     <td>
                         <div class="d-flex fs-3">
-                            <a href="{{ route('coffee.show', $row->id) }}" class="btn btn-success text-dark me-3"><i class="bi bi-eye users-icon text-white"></i></a>
-                            <a href="{{ route('coffee.edit', $row->id) }}" class="btn btn-warning me-3"><i class="bi bi-pencil-square users-icon text-white"></i></a>
-                            <a href="" class="btn btn-danger text-dark"><i class="bi bi-trash3 users-icon text-white"></i></a>
+                            <form action="{{ route('coffee.destroy', $row->id) }}" method="post">
+                                @csrf
+                                @method('DELETE')
+                                <a href="{{ route('coffee.show', $row->id) }}" class="btn btn-success text-dark me-3"><i class="bi bi-eye users-icon text-white"></i></a>
+                                <a href="{{ route('coffee.edit', $row->id) }}" class="btn btn-warning me-3"><i class="bi bi-pencil-square users-icon text-white"></i></a>
+                                <button type="submit" class="btn btn-danger text-dark"><i class="bi bi-trash3 users-icon text-white"></i></button>
+                            </form>
                         </div>
                     </td>
                 </tr>            
