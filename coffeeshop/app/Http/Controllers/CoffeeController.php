@@ -70,7 +70,7 @@ class CoffeeController extends Controller
      */
     public function show(Coffee $coffee)
     {
-        //
+        return view('admin.show', compact('coffee'));
     }
 
     /**
