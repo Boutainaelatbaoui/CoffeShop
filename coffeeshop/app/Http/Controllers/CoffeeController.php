@@ -81,7 +81,7 @@ class CoffeeController extends Controller
      */
     public function edit(Coffee $coffee)
     {
-        //
+        return view('admin.edit', compact('coffee'));
     }
 
     /**

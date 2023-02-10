@@ -1,5 +1,5 @@
 @extends('layouts.layout')
-@section('title','Coffee Shop | Show Item')
+@section('title','Coffee Shop | Show coffee')
 
 @section('content')
     <div class="row d-flex justify-content-center">
