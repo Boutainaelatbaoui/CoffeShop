@@ -125,3 +125,151 @@ body{
     background-color: #0c2b3c !important;
     color: #eeeeee !important;
 }
+
+@media (max-width: 600px){
+    .container{
+        background-color: #1d3557;
+        width: 90% !important;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+}
+
+.navbar-dash{
+    background-color: #1f202b !important;
+    border-bottom-right-radius: 70px !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+:root {
+    --topNavbarHeight: 82px !important;
+}
+
+.sidebar-nav {
+    --bs-offcanvas-width: 220px !important;
+    top: var(--topNavbarHeight) !important;
+    background-color: #1f202b!important;
+    font-weight: bolder !important;
+    border-bottom-right-radius: 60px !important;
+}
+
+.sidebar-text {
+    font-size: 16px !important;
+}
+
+.offcanvas-backdrop.show {
+    display: none !important;
+}
+
+.close-offcanvas {
+    display: block;
+}
+
+.btn-two{
+    background-color: #eeeeee;
+    color: #0c2b3c !important;
+}
+
+.btn-two a:hover{
+    background-color: #ced8d9 !important;
+}
+
+.main-dash {
+    margin: 125px 10px 0 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal-backdrop{
+    display: none !important;
+}
+
+.welcome-card {
+    background-color: #eeeeee !important ;
+}
+
+.bx-shadow{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.card-style{
+    z-index: -1;
+    position: absolute;
+    width: 55%;
+    height: 200%;
+    background-color: #ced8d9;
+    transform: skewX(43deg);
+}
+
+.btn-modal{
+    background-color: #0c2b3c !important;
+    border-radius: 10px !important;
+    color: #ced8d9 !important;
+}
+
+.card-text{
+    color: #1f202b !important;
+    font-weight: bolder !important;
+}
+
+.modal-title{
+    color: #1d3557 !important;
+}
+
+#data-table_wrapper{
+    margin-top: 50px !important;
+    font-family: 'Poppins', sans-serif;
+    color: #1d3557 !important;
+    font-weight: bolder !important;
+}
+
+.dataTables_wrapper .dataTables_filter input{
+    border-radius: 10px !important;
+}
+
+.dataTables_scrollHeadInner{
+    margin-top: 20px;
+}
+
+thead{
+    background-color: #0c2b3c;
+    color: #edf2f4 !important;
+}
+
+table{
+    border-radius: 65px !important;
+}
+
+.logo-dash{
+    color: #eeeeee !important;
+}
+
+.nav-dash a:hover{
+    background-color: #ced8d9 !important;
+}
+
+@media (min-width: 992px) {
+    .sidebar-nav {
+        transform: none !important;
+        visibility: visible !important;
+        border-bottom-right-radius: 60px !important;
+        box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+        top: var(--topNavbarHeight) !important;
+        height: calc(100% - var(--topNavbarHeight)) !important;
+    }
+    .close-offcanvas {
+        display: none;
+    }
+
+    .main-dash {
+        margin-left: 240px;
+    }
+
+    .height-form{
+        height: 100vh;
+    }
+}

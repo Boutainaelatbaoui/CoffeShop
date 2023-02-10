@@ -22,7 +22,7 @@
             <div class="card-text mb-4">
                 <h4 class="mt-1 fw-bolder">Welcome back <i class="bi bi-quote"></i>{{ Auth::user()->name }}<i class="bi bi-quote"></i> <span>&#128075;</span></h4>
             </div>
-            <a href="{{ route('coffee.create') }}">Add New Coffee</a>
+            <a href="{{ route('coffee.create') }}" class="btn btn-modal">Add New Coffee</a>
         </div>
     </div>
     <!-- TASK MODAL -->

@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title','Coffee Shop | Email For Reset Password')
 
 @section('content')
 <div class="container mt-5">

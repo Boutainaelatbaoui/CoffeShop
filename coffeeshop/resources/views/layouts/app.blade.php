@@ -23,7 +23,7 @@
 
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex navbar-welcome py-2">
             <a class="navbar-brand mx-4" href="{{Route('home')}}">
@@ -85,7 +85,7 @@
             @yield('content')
         </main>
     </div>
-    <footer class="text-center text-lg-start footer-one position-absolute w-100">
+    <footer class="text-center text-lg-start footer-one mt-auto">
         <div class="container d-flex justify-content-center py-5">
             <button type="button" class="btn btn-footer btn-lg btn-floating mx-2">
                 <i class="bi bi-facebook text-center"></i>
