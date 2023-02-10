@@ -85,7 +85,7 @@
             @yield('content')
         </main>
     </div>
-    <footer class="text-center text-lg-start footer-one">
+    <footer class="text-center text-lg-start footer-one position-absolute w-100">
         <div class="container d-flex justify-content-center py-5">
             <button type="button" class="btn btn-footer btn-lg btn-floating mx-2">
                 <i class="bi bi-facebook text-center"></i>

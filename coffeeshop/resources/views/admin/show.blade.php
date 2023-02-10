@@ -5,7 +5,9 @@
     <div class="row d-flex justify-content-center">
         <div class="col-6">
             <div class="card card-menu btn bg-white mb-3 p-0">
-                <img src="{{ asset('img/' . $coffee->coffee_image) }}" class="card-img-top" width="80" alt="...">
+                <div class="row d-flex justify-content-center">
+                    <img src="{{ asset('img/' . $coffee->coffee_image) }}" class="card-img-top mt-2 img-fluid" style="width: 250px;" alt="...">
+                </div>
                 <div class="card-body">
                     <h4 class="card-title fw-bolder">{{ $coffee->coffee_name }}</h4>
                     <p class="card-text">{{ $coffee->coffee_detail }}</p>
