@@ -33,6 +33,8 @@ Route::group(['middleware' => ['auth','isAdmin']], function () {
 Route::group(['middleware' => 'auth'], function() {
     Route::get('/changePassword',[HomeController::class, 'showChangePasswordGet'])->name('changePasswordGet');
     Route::post('/changePassword',[HomeController::class, 'changePasswordPost'])->name('changePasswordPost');
+    Route::get('/editprofile',[HomeController::class, 'showEditProfile'])->name('editProfileGet');
+    Route::post('/editprofile',[HomeController::class, 'profileUpdate'])->name('profileUpdate');
 });
 
 Route::group(['middleware' => ['prevent-back-history']],function(){

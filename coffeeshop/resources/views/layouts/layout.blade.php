@@ -58,7 +58,7 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-end ms-4 ms-lg-0" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="">
+                            <a class="dropdown-item" href="{{ route('editProfileGet') }}">
                                 {{ __('Edit Profile') }}
                             </a>
                             <a class="dropdown-item" href="{{ route('changePasswordGet') }}">Change Password </a>

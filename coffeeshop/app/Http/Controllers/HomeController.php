@@ -62,4 +62,24 @@ class HomeController extends Controller
         return back()->with('success', "Password Changed Successfully");
     }
 
+    public function showEditProfile() {
+        return view('users.editprofile');
+    }
+
+    public function profileUpdate(Request $request){
+        //validation rules
+
+        $this->validate($request,[
+            'name' =>'required|min:4|string|max:255',
+            'email'=>'unique:users|email|required'
+        ]);
+
+        $user =Auth::user();
+
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->save();
+        return back()->with('success','Profile Updated');
+    }
+
 }
