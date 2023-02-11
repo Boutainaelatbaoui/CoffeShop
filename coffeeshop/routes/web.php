@@ -30,6 +30,11 @@ Route::group(['middleware' => ['auth','isAdmin']], function () {
     Route::resource('coffee', CoffeeController::class);
 });
 
+Route::group(['middleware' => 'auth'], function() {
+    Route::get('/changePassword',[HomeController::class, 'showChangePasswordGet'])->name('changePasswordGet');
+    Route::post('/changePassword',[HomeController::class, 'changePasswordPost'])->name('changePasswordPost');
+});
+
 Route::group(['middleware' => ['prevent-back-history']],function(){
 	Auth::routes();
 	Route::get('/home', [HomeController::class, 'index']);

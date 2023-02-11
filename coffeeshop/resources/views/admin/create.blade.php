@@ -32,7 +32,7 @@
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Price</label>
-                                <input type="number" class="form-control" name="coffee_price" id="coffee-price"/>
+                                <input type="number" class="form-control" name="coffee_price" step=".01" id="coffee-price"/>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Detail</label>

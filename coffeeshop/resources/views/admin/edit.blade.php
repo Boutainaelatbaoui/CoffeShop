@@ -33,7 +33,7 @@
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Price</label>
-                                <input type="number" class="form-control" name="coffee_price" id="coffee-price" value="{{ $coffee->coffee_price }}"/>
+                                <input type="number" class="form-control" name="coffee_price" id="coffee-price" step=".01" value="{{ $coffee->coffee_price }}"/>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Detail</label>
