@@ -269,3 +269,11 @@ table{
         height: 100vh;
     }
 }
+
+.btn-allmenu{
+    background-color: #1f202b !important;
+    color: #edf2f4 !important;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bolder;
+    font-size: 19px;
+}

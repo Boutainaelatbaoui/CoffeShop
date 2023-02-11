@@ -20,8 +20,14 @@ class CoffeeController extends Controller
 
     public function showMenu()
     {
-        $data = Coffee::all();
+        $data = Coffee::limit(3)->get();
         return view('home', compact('data'));
+    }
+
+    public function allMenu()
+    {
+        $data = Coffee::all();
+        return view('menu', compact('data'));
     }
 
     /**

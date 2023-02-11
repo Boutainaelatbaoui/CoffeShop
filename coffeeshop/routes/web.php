@@ -20,6 +20,7 @@ Route::get('/home', function () {
 })->name('home');
 
 Route::get('/', [CoffeeController::class, 'showMenu'])->name('home');
+Route::get('/menu', [CoffeeController::class, 'allMenu'])->name('menu');
 
 Auth::routes();
 

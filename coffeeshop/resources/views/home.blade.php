@@ -28,6 +28,10 @@
         <h1 class="fw-bold home-textone">Our Coffee</h1>
         <h3 class="mt-3 home-subtext">We have carefully selected great tasting coffees</h3>
         <h3 class="mt-2 home-subtext">from around the world.</h3>
+        <form id="menu-form" action="{{ route('menu') }}" method="GET" class="mt-4">
+            @csrf
+            <button type="submit" class="btn btn-allmenu">View The Menu</button>
+        </form>
     </div>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 mt-5">
         @foreach ($data as $row)
