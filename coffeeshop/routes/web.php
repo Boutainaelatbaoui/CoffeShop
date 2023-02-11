@@ -27,6 +27,7 @@ Auth::routes();
 
 Route::group(['middleware' => ['auth','isAdmin']], function () {
     Route::get('/coffee', [HomeController::class, 'adminHome'])->name('dashboard');
+    Route::resource('coffee', CoffeeController::class);
 });
 
 Route::group(['middleware' => ['prevent-back-history']],function(){
@@ -34,4 +35,3 @@ Route::group(['middleware' => ['prevent-back-history']],function(){
 	Route::get('/home', [HomeController::class, 'index']);
 });
 
-Route::resource('coffee', CoffeeController::class);

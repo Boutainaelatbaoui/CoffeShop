@@ -248,10 +248,6 @@ table{
     color: #eeeeee !important;
 }
 
-.nav-dash a:hover{
-    background-color: #ced8d9 !important;
-}
-
 @media (min-width: 992px) {
     .sidebar-nav {
         transform: none !important;
