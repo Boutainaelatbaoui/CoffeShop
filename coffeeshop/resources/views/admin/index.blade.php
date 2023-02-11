@@ -42,7 +42,7 @@
         <tbody>
             @foreach ($data as $row)
                 <tr class="odd">
-                    <td class=""><img src="{{ asset('img/' . $row->coffee_image) }}" width="75px"></td>
+                    <td class=""><img src="{{ asset('img/' . $row->coffee_image) }}" width="85px" height="65px"></td>
                     <td class="sorting_1">{{ $row->coffee_name }}</td>
                     <td class="">{{ $row->coffee_size }}</td>
                     <td class="">{{ $row->coffee_price }}</td>

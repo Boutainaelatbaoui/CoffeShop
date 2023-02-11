@@ -18,6 +18,12 @@ class CoffeeController extends Controller
         return view('admin.index', compact('data'));
     }
 
+    public function showMenu()
+    {
+        $data = Coffee::all();
+        return view('home', compact('data'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
