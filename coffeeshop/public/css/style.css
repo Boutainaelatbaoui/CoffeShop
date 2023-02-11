@@ -272,11 +272,12 @@ table{
 }
 
 .btn-allmenu{
-    background-color: #1f202b !important;
+    background-color: #0c2b3c !important;
     color: #edf2f4 !important;
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Playball', cursive;
     font-weight: bolder;
-    font-size: 19px;
+    font-size: 25px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .nav-app{
