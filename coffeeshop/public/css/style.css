@@ -46,6 +46,7 @@ body{
 .nav-user{
     color: #FFFFFF !important;
     font-weight: bolder;
+    width: fit-content !important;
 }
 
 .dropdown-menu{
@@ -276,4 +277,9 @@ table{
     font-family: 'Kaushan Script', cursive;
     font-weight: bolder;
     font-size: 19px;
+}
+
+.nav-app{
+    color: #0c2b3c !important;
+    font-weight: bolder;
 }

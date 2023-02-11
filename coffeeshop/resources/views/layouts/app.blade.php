@@ -36,8 +36,13 @@
             </button>
             <div class="collapse navbar-collapse" id="menuItems">
                 <!-- Left Side Of Navbar -->
-                <ul class="navbar-nav me-auto">
-
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0 ms-4 ms-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link nav-app" href="{{ route('home') }}">{{ __('Home') }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-app" href="{{ route('menu') }}">{{ __('Menu') }}</a>
+                    </li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -46,18 +51,18 @@
                     @guest
                         @if (Route::has('login'))
                             <li class="nav-item">
-                                <a class="nav-link btn btn-one me-3 mt-2 mt-lg-0 ms-4 ms-lg-0" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link nav-user px-3 btn btn-one me-3 mt-2 mt-lg-0 ms-4 ms-lg-0" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                         @endif
 
                         @if (Route::has('register'))
                             <li class="nav-item">
-                                <a class="nav-link btn btn-one mt-3 mt-lg-0 ms-4 ms-lg-0" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                <a class="nav-link nav-user px-3 btn btn-one mt-3 mt-lg-0 ms-4 ms-lg-0" href="{{ route('register') }}">{{ __('Register') }}</a>
                             </li>
                         @endif
                     @else
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle nav-user ms-4 ms-lg-0 mt-3 mt-lg-0 btn btn-one" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle nav-user ms-4 ms-lg-0 mt-3 mt-lg-0 btn btn-one px-3" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }}
                             </a>
 
