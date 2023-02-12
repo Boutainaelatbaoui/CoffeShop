@@ -18,12 +18,6 @@ class CoffeeController extends Controller
         return view('admin.index', compact('data'));
     }
 
-    public function showMenu()
-    {
-        $data = Coffee::limit(3)->get();
-        return view('home', compact('data'));
-    }
-
     public function allMenu()
     {
         $data = Coffee::all();

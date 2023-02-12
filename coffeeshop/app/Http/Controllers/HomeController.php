@@ -48,12 +48,12 @@ class HomeController extends Controller
 
         if (!Hash::check($request->get('current_password'), $auth->password)) 
         {
-            return back()->with('error', "Current Password is Invalid");
+            return back()->with('error2', "Current Password is Invalid");
         }
 
         if (strcmp($request->get('current_password'), $request->new_password) == 0) 
         {
-            return redirect()->back()->with("error", "New Password cannot be same as your current password.");
+            return redirect()->back()->with("error1", "New Password cannot be same as your current password.");
         }
         
         $user =  User::find($auth->id);
@@ -67,12 +67,19 @@ class HomeController extends Controller
     }
 
     public function profileUpdate(Request $request){
-        //validation rules
 
-        $this->validate($request,[
-            'name' =>'required|min:4|string|max:255',
-            'email'=>'unique:users|email|required'
-        ]);
+        if(Auth::user()->email === $request['email']) {
+            $this->validate($request,[
+                'name' =>'required|min:4|string|max:255',
+                'email'=>'email|required'
+            ]);
+        } else {
+            $this->validate($request,[
+                'name' =>'required|min:4|string|max:255',
+                'email'=>'unique:users|email|required'
+            ]);
+        }
+
 
         $user =Auth::user();
 

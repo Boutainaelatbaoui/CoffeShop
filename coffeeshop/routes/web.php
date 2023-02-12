@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MenuController;
 use App\Http\Controllers\CoffeeController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -19,7 +20,7 @@ Route::get('/home', function () {
     return view('home');
 })->name('home');
 
-Route::get('/', [CoffeeController::class, 'showMenu'])->name('home');
+Route::get('/', [MenuController::class, 'index'])->name('home');
 Route::get('/menu', [CoffeeController::class, 'allMenu'])->name('menu');
 
 Auth::routes();
@@ -38,6 +39,6 @@ Route::group(['middleware' => 'auth'], function() {
 
 Route::group(['middleware' => ['prevent-back-history']],function(){
 	Auth::routes();
-	Route::get('/home', [HomeController::class, 'index']);
+	Route::get('/home', [MenuController::class, 'index']);
 });
 

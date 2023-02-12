@@ -17,10 +17,17 @@
                             </ul>
                         </div>
                     @endif
-                    @if (session('error'))
+                    @if (session('error2'))
                         <div class="alert alert-danger alert-dismissible fade show" role="alert">
                             <strong>warning!</strong>
-                            {{ session('error') }}
+                            {{ session('error2') }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    @endif
+                    @if (session('error1'))
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong>warning!</strong>
+                            {{ session('error1') }}
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     @endif
