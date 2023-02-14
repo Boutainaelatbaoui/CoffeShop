@@ -128,11 +128,6 @@ body{
 }
 
 @media (max-width: 600px){
-    .container{
-        background-color: #1d3557;
-        width: 90% !important;
-    }
-
     .logo {
         font-size: 30px;
     }
